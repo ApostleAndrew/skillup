@@ -1,1 +1,105 @@
-default.css
+
+.frame{
+	padding: 5%;
+}
+.block1 {
+	float: left;
+	margin: auto 0;
+	height: 450px;
+}
+@media (min-width: 1200px){
+.block1 {
+	width: 23%;
+}}
+@media (max-width: 1199px) and (min-width: 991px){
+.block1 {
+	width: 30%;
+}}
+@media (max-width: 992px) and (min-width: 768px){
+.block1 {
+	width: 40%;
+}}
+@media (max-width: 767px){
+.block1 {
+	width: 80%;
+	height: 80%;
+}}
+img {
+	height: auto;
+	width: 50%;
+	height: 25%;
+	max-height: 130px;
+}
+/* Назва товару */
+h1 {
+	width: 60%;
+	font-size: 12pt;
+	text-align: left;
+	text-decoration: underline;
+	color:  #1a53ff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+h1:hover {
+	color: #e60000;
+	text-decoration: none;
+}
+
+/* Категорія товару */
+h2 {
+	width: 60%;
+	font-size: 7pt;
+	text-align: left;
+	font-weight: normal;
+	color: #999966;
+}
+h2:hover {
+	color: #5c5c3d;
+	text-decoration: underline;
+}
+a {
+	text-decoration: none;
+}
+/* Ціна товару */
+h3 {
+	width: 60%;
+	text-align: left;
+	font-size: 12pt;
+	color: #e60000;
+}
+
+/* Опис товару */
+p {
+	width: 100%;
+	font-size: 7pt;
+	font-weight: normal;
+	color:  #3d3d29;
+
+
+}
+
+/* Рейтинг товару */
+.rating {
+
+  width: 70%;
+  height: 3px;
+  padding: 3px;
+  font-size: 10pt;
+  unicode-bidi: bidi-override; 
+ }
+.rating:not(:checked) > input {
+  display: none;}
+#rate:not(:checked) > label {
+  
+  float: right;
+  width: 20px;
+  height: 20px;
+  display: block;
+  color: #a1a1a1;
+  line-height: 10px;
+  text-align: left;
+}
+ */#rate:not(:checked) > label:hover, 
+#rate:not(:checked) > label:hover ~ 
+ label { color:  #fe9506;} 
+#rate > input:checked ~ label {color:  #fe9506;}
