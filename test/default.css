@@ -30,6 +30,11 @@ img {
 	height: 25%;
 	max-height: 130px;
 }
+img:hover {
+	-webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
 /* Назва товару */
 h1 {
 	width: 60%;
