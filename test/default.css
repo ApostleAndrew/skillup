@@ -21,8 +21,8 @@
 }}
 @media (max-width: 767px){
 .block1 {
-	width: 80%;
-	height: 80%;
+	width: 75%;
+	height: 100%;
 }}
 img {
 	height: auto;
@@ -85,12 +85,11 @@ p {
 
 /* Рейтинг товару */
 .rating {
-
   width: 70%;
   height: 3px;
   padding: 3px;
-  font-size: 10pt;
-  unicode-bidi: bidi-override; 
+  font-size: 12pt;
+  unicode-bidi: bidi-override;
  }
 .rating:not(:checked) > input {
   display: none;}
